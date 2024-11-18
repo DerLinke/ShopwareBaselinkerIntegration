@@ -1,20 +1,20 @@
 <?php declare(strict_types=1);
 
 
-namespace Crehler\BaseLinkerShopsApi\Storefront\Controller;
+namespace derlinke\shopwarebaselinkerintegration\Storefront\Controller;
 
-use Crehler\BaseLinkerShopsApi\Component\BaseLinker\StoreApiStruct\Order\OrderAddRequest;
-use Crehler\BaseLinkerShopsApi\Services\ConfigService;
-use Crehler\BaseLinkerShopsApi\Services\Readers\CategoryReader;
-use Crehler\BaseLinkerShopsApi\Services\Readers\OrderReader;
-use Crehler\BaseLinkerShopsApi\Services\Readers\ProductReader;
+use derlinke\shopwarebaselinkerintegration\Component\BaseLinker\StoreApiStruct\Order\OrderAddRequest; 
+use derlinke\shopwarebaselinkerintegration\Services\ConfigService; 
+use derlinke\shopwarebaselinkerintegration\Services\Readers\CategoryReader; 
+use derlinke\shopwarebaselinkerintegration\Services\Readers\OrderReader; 
+use derlinke\shopwarebaselinkerintegration\Services\Readers\ProductReader; 
 use Monolog\Logger;
 use Shopware\Core\Framework\Validation\DataBag\RequestDataBag;
 use Shopware\Core\System\SalesChannel\SalesChannelContext;
 use Shopware\Storefront\Controller\StorefrontController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Routing\Annotation\Route;
+// use Symfony\Component\Routing\Annotation\Route; 
 
 #[Route(defaults: ['_routeScope' => ['storefront']])]
 class BaseLinkerController extends StorefrontController
